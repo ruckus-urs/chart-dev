@@ -143,3 +143,38 @@ spec:
                 configMapKeyRef:
                   name: urs-config
                   key: server.release.notes
+            - name: spring.security.oauth2.client.registration.r1.client_name
+              valueFrom:
+                configMapKeyRef:
+                  name: urs-config
+                  key: spring.security.oauth2.client.registration.r1.client_name
+            - name: spring.security.oauth2.client.registration.r1.app_id
+              valueFrom:
+                configMapKeyRef:
+                  name: urs-config
+                  key: spring.security.oauth2.client.registration.r1.app_id
+            - name: spring.security.oauth2.client.registration.r1.app_secret
+              valueFrom:
+                configMapKeyRef:
+                  name: urs-config
+                  key: spring.security.oauth2.client.registration.r1.app_secret
+            - name: spring.security.oauth2.client.registration.r1.auth_uri
+              valueFrom:
+                configMapKeyRef:
+                  name: urs-config
+                  key: spring.security.oauth2.client.registration.r1.auth_uri
+            - name: spring.security.oauth2.client.registration.r1.token_uri
+              valueFrom:
+                configMapKeyRef:
+                  name: urs-config
+                  key: spring.security.oauth2.client.registration.r1.token_uri
+            - name: spring.security.oauth2.client.registration.r1.jwks
+              valueFrom:
+                configMapKeyRef:
+                  name: urs-config
+                  key: spring.security.oauth2.client.registration.r1.jwks
+            - name: spring.security.oauth2.client.registration.r1.api_key
+              valueFrom:
+                configMapKeyRef:
+                  name: urs-config
+                  key: spring.security.oauth2.client.registration.r1.api_key
