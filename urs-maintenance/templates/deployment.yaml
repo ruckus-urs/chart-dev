@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: urs-maintenance
-          image: 765528283900.dkr.ecr.us-west-2.amazonaws.com/urs-maintenance:137
+          image: 765528283900.dkr.ecr.us-west-2.amazonaws.com/urs-maintenance:138
           imagePullPolicy: IfNotPresent
           env:
             - name: release.version
