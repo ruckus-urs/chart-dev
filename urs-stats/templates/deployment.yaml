@@ -94,3 +94,5 @@ spec:
                 configMapKeyRef:
                   name: urs-config
                   key: aws.dynamodb.region
+            - name: server.portal.port
+              value: "9643"
