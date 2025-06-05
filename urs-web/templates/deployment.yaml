@@ -213,3 +213,5 @@ spec:
                 configMapKeyRef:
                   name: urs-config
                   key: azure.smtp.system_name
+            - name: server.login.cam.only
+              value: "false"
