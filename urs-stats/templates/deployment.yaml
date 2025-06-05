@@ -96,3 +96,5 @@ spec:
                   key: aws.dynamodb.region
             - name: server.portal.port
               value: "9643"
+            - name: server.login.cam.only
+              value: "false"
