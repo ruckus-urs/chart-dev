@@ -44,3 +44,53 @@ spec:
                 configMapKeyRef:
                   name: urs-config
                   key: spring.cloud.kubernetes.discovery.namespaces
+            - name: azure.smtp.client_id
+              valueFrom:
+                configMapKeyRef:
+                  name: urs-config
+                  key: azure.smtp.client_id
+            - name: azure.smtp.tenant_id
+              valueFrom:
+                configMapKeyRef:
+                  name: urs-config
+                  key: azure.smtp.tenant_id
+            - name: azure.smtp.client_secret
+              valueFrom:
+                configMapKeyRef:
+                  name: urs-config
+                  key: azure.smtp.client_secret
+            - name: azure.smtp.scopes
+              valueFrom:
+                configMapKeyRef:
+                  name: urs-config
+                  key: azure.smtp.scopes
+            - name: azure.smtp.mail_from
+              valueFrom:
+                configMapKeyRef:
+                  name: urs-config
+                  key: azure.smtp.mail_from
+            - name: azure.smtp.user_name
+              valueFrom:
+                configMapKeyRef:
+                  name: urs-config
+                  key: azure.smtp.user_name
+            - name: azure.smtp.system_name
+              valueFrom:
+                configMapKeyRef:
+                  name: urs-config
+                  key: azure.smtp.system_name
+            - name: aws.access_key_id
+              valueFrom:
+                secretKeyRef:
+                  name: urs-secret
+                  key: aws.access_key_id
+            - name: aws.secret_access_key
+              valueFrom:
+                secretKeyRef:
+                  name: urs-secret
+                  key: aws.secret_access_key
+            - name: aws.dynamodb.region
+              valueFrom:
+                configMapKeyRef:
+                  name: urs-config
+                  key: aws.dynamodb.region
