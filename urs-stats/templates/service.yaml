@@ -14,9 +14,9 @@ spec:
       protocol: TCP
       targetPort: 8020
     - name: https-portal
-      port: 8443
+      port: 9643
       protocol: TCP
-      targetPort: 8443
+      targetPort: 9643
   selector:
     app: urs-stats
   type: ClusterIP
