@@ -41,6 +41,11 @@ spec:
                 configMapKeyRef:
                   name: urs-config
                   key: spring.data.redis.timeout
+            - name: spring.data.redis.password
+              valueFrom:
+                secretKeyRef:
+                  name: urs-secret
+                  key: spring.data.redis.password
             - name: system.code
               valueFrom:
                 configMapKeyRef:
@@ -76,6 +81,11 @@ spec:
                 configMapKeyRef:
                   name: urs-config
                   key: aws.cognito.user-pool-domain.unleashed
+            - name: aws.cognito.identity.pool-id
+              valueFrom:
+                configMapKeyRef:
+                  name: urs-config
+                  key: aws.cognito.identity.pool-id.unleashed
             - name: email.service.smtp
               valueFrom:
                 configMapKeyRef:
@@ -155,8 +165,8 @@ spec:
                   key: spring.security.oauth2.client.registration.r1.app_id
             - name: spring.security.oauth2.client.registration.r1.app_secret
               valueFrom:
-                configMapKeyRef:
-                  name: urs-config
+                secretKeyRef:
+                  name: urs-secret
                   key: spring.security.oauth2.client.registration.r1.app_secret
             - name: spring.security.oauth2.client.registration.r1.auth_uri
               valueFrom:
@@ -175,8 +185,8 @@ spec:
                   key: spring.security.oauth2.client.registration.r1.jwks
             - name: spring.security.oauth2.client.registration.r1.api_key
               valueFrom:
-                configMapKeyRef:
-                  name: urs-config
+                secretKeyRef:
+                  name: urs-secret
                   key: spring.security.oauth2.client.registration.r1.api_key
             - name: azure.smtp.client_id
               valueFrom:
@@ -190,8 +200,8 @@ spec:
                   key: azure.smtp.tenant_id
             - name: azure.smtp.client_secret
               valueFrom:
-                configMapKeyRef:
-                  name: urs-config
+                secretKeyRef:
+                  name: urs-secret
                   key: azure.smtp.client_secret
             - name: azure.smtp.scopes
               valueFrom:
@@ -215,3 +225,29 @@ spec:
                   key: azure.smtp.system_name
             - name: server.login.cam.only
               value: "false"
+            - name: spring.security.user.password
+              valueFrom:
+                secretKeyRef:
+                  name: urs-secret
+                  key: spring.security.user.password
+            - name: social.tweet.app_secret
+              valueFrom:
+                secretKeyRef:
+                  name: urs-secret
+                  key: social.tweet.app_secret
+            - name: social.tweet.consumer_key
+              valueFrom:
+                secretKeyRef:
+                  name: urs-secret
+                  key: social.tweet.consumer_key
+            - name: social.tweet.consumer_secret
+              valueFrom:
+                secretKeyRef:
+                  name: urs-secret
+                  key: social.tweet.consumer_secret
+            - name: google.firebase.config.apiKey
+              valueFrom:
+                secretKeyRef:
+                  name: urs-secret
+                  key: google.firebase.config.apiKey
+
