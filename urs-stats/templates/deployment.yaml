@@ -62,7 +62,7 @@ spec:
             - name: azure.smtp.client_secret
               valueFrom:
                 secretKeyRef:
-                  name: urs-config
+                  name: urs-secret
                   key: azure.smtp.client_secret
             - name: azure.smtp.scopes
               valueFrom:

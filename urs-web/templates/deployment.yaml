@@ -85,7 +85,7 @@ spec:
               valueFrom:
                 configMapKeyRef:
                   name: urs-config
-                  key: aws.cognito.identity.pool-id.unleashed
+                  key: aws.cognito.identity.pool-id
             - name: email.service.smtp
               valueFrom:
                 configMapKeyRef:
