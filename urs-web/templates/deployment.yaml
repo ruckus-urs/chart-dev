@@ -5,7 +5,7 @@ metadata:
     app: urs-web
   name: urs-web
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: urs-web
