@@ -5,7 +5,7 @@ metadata:
     app: urs-tunnel-manager
   name: urs-tunnel-manager
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: urs-tunnel-manager
