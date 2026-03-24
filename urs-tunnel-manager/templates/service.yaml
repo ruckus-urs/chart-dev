@@ -7,6 +7,12 @@ metadata:
   name: urs-tunnel-manager
 spec:
   ports:
+    - name: http
+      port: 8079
+      targetPort: 8079
+    - name: http-local
+      port: 8078
+      targetPort: 8078
     - port: 8022
       protocol: TCP
       name: port-redirect
