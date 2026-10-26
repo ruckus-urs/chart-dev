@@ -123,3 +123,38 @@ spec:
                 secretKeyRef:
                   name: urs-secret
                   key: jwt.secret
+            - name: AP_CREDENTIAL_PAYLOAD_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: urs-secret
+                  key: AP_CREDENTIAL_PAYLOAD_KEY
+            - name: AP_PUBNUB_PUBLISH_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: urs-secret
+                  key: AP_PUBNUB_PUBLISH_KEY
+            - name: AP_PUBNUB_SUBSCRIBE_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: urs-secret
+                  key: AP_PUBNUB_SUBSCRIBE_KEY
+            - name: AP_SNS_ACCESS_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: urs-secret
+                  key: AP_SNS_ACCESS_KEY
+            - name: AP_SNS_SECRET_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: urs-secret
+                  key: AP_SNS_SECRET_KEY
+            - name: AP_ONLINE_USER
+              valueFrom:
+                secretKeyRef:
+                  name: urs-secret
+                  key: AP_ONLINE_USER
+            - name: AP_ONLINE_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: urs-secret
+                  key: AP_ONLINE_PASSWORD
