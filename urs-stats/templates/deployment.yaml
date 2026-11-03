@@ -123,6 +123,21 @@ spec:
                 secretKeyRef:
                   name: urs-secret
                   key: jwt.secret
+            - name: AP_CREDENTIAL_SCHEMA_VERSION
+              valueFrom:
+                secretKeyRef:
+                  name: urs-secret
+                  key: AP_CREDENTIAL_SCHEMA_VERSION
+            - name: AP_CREDENTIAL_VERSION
+              valueFrom:
+                secretKeyRef:
+                  name: urs-secret
+                  key: AP_CREDENTIAL_VERSION
+            - name: AP_CREDENTIAL_REFRESH_AFTER_SECONDS
+              valueFrom:
+                secretKeyRef:
+                  name: urs-secret
+                  key: AP_CREDENTIAL_REFRESH_AFTER_SECONDS
             - name: AP_CREDENTIAL_PAYLOAD_KEY
               valueFrom:
                 secretKeyRef:
