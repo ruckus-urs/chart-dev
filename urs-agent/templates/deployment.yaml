@@ -14,13 +14,6 @@ spec:
       labels:
         app: ursagentweb
     spec:
-      topologySpreadConstraints:
-        - maxSkew: 1
-          topologyKey: kubernetes.io/hostname
-          whenUnsatisfiable: ScheduleAnyway
-          labelSelector:
-            matchLabels:
-              app: urs-agent
       containers:
         - name: urs-agent
           image: 765528283900.dkr.ecr.us-west-2.amazonaws.com/urs-agent:1.2.0.76
